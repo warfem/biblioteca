@@ -1,0 +1,127 @@
+/* Quitamos el margin y el padding del body*/
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+	color: black;
+	 text-decoration:none;
+}
+
+/* Damos el máximo tamaño de la pantalla y utilizo flexbox para colocar todos los
+elementos y se coloran en horizontal*/
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Alineamos el texto del título le damos un tamaño a la cabecera y luego un background*/
+.header{
+    color:white;
+    text-align: center;
+    background: linear-gradient(to bottom right,rgb(172, 122, 64),rgb(212, 219, 221),rgb(227, 227, 235)); 
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em; 
+}
+.header img{
+    float: left;
+    margin-top: -0.5em ;
+    margin-right: -64px;
+    width: 10em;
+}
+/*Le damos estilo al login y a los botones*/
+.login{
+    float: right;
+    margin-top: -4em;
+}
+.login button{
+    border-radius: 10px;
+    background-color: rgb(172, 122, 64);
+    color: white;
+}
+td{
+    color:rgb(172, 122, 64);
+}
+.nav{
+    background: rgba(165, 134, 50, 0.877);
+}
+
+/*En la lista utilizamos flex le ponemos el contador y quitamos el estilo de la lista
+quitamos el margen y padding, ponemos el texto centrado y el máximo tamaño de la página*/
+.nav ol {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.nav li{
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cuando pasas por encima del li cambiará de color la letra y fondo */
+li:hover{
+    color: black;
+    background-color: chocolate;
+}
+
+/*Le flex-wrap para que ponga todo dentro de la misma fila y ocupe todo el espacio*/
+.texto{
+    display: flex; 
+    flex-wrap: nowrap;
+    margin-top: 1em;
+}
+
+.texto div{
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    float: left;
+    margin-top: -0.5em ;
+    margin-right: -64px;
+    width: 4em;
+    
+}
+
+/*Creamos el background con el radial-gradient para que termine en forma circular
+con los colores deseados, ponemos porcentajes al radius para que haga esta forma*/
+.footer{
+    background: linear-gradient(to top left,rgb(172, 122, 64),rgb(212, 219, 221),rgb(227, 227, 235)); 
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.footer img{
+    float: left;
+    padding-left: 4em;
+    
+    flex-direction: column;
+}
+.footer h1{
+    color:white;
+    text-align: center; 
+    margin-right: 6em;
+    margin-top: -1em;
+   
+}
